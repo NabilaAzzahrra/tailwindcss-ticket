@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .content{
+            background-image: url("src/img/bg-ticket.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body class="mx-12 my-12 bg-gray-500">
+    <div class="">
+        <div class="bg-[#F46523] px-6 py-6 rounded-t-xl flex justify-between">
+            <h1 class="text-white font-bold text-xl">FORM DATA TIKET</h1>
+            <img src="src/img/plane-white.png" class="w-16 h-10">
+        </div>
+        <div class="bg-white py-6 px-6 rounded-b-xl">
+            <form class="w-full mx-auto">
+
+                <div class="flex gap-4 mb-4">
+                    <div class="w-full">
+                        <label for="flight"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Flight<span
+                                class="text-red-500">*</span></label>
+                        <input type="text" id="flight" name="flight"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Flight Here....">
+                    </div>
+                    <div class="w-full">
+                        <label for="from" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">From<span
+                                class="text-red-500">*</span></label>
+                        <input type="text" id="from" name="from"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Location From Here....">
+                    </div>
+                    <div class="w-full">
+                        <label for="to" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">To<span
+                                class="text-red-500">*</span></label>
+                        <input type="text" id="to" name="to"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Location To Here....">
+                    </div>
+                </div>
+
+                <div class="flex gap-4 mb-4">
+                    <div class="w-full">
+                        <label for="terminal"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Terminal<span
+                                class="text-red-500">*</span></label>
+                        <input type="number" id="terminal" name="terminal"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Terminal Here....">
+                    </div>
+                    <div class="w-full">
+                        <label for="passenger"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Passenger<span
+                                class="text-red-500">*</span></label>
+                        <input type="text" id="passenger" name="passenger"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Passenger Here....">
+                    </div>
+                    <div class="w-full">
+                        <label for="date" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Date<span
+                                class="text-red-500">*</span></label>
+                        <input type="date" id="date" name="date"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    </div>
+                    <div class="w-full">
+                        <label for="boarding_time"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Boarding Time<span
+                                class="text-red-500">*</span></label>
+                        <input type="time" id="boarding_time" name="boarding_time"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    </div>
+                    <div class="w-full">
+                        <label for="seat" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Seat<span
+                                class="text-red-500">*</span></label>
+                        <input type="text" id="seat" name="seat"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Seat Here...">
+                    </div>
+                </div>
+
+                <button type="submit"
+                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="my-12 mx-52">
+        <div class="flex">
+            <div class="bg-[#F46523] w-[850px] px-[50px] p-2 font-bold text-2xl text-white rounded-t-3xl">
+                BOARDING PASS
+            </div>
+            <div class="bg-[#F46523] w-[400px] p-6 rounded-t-3xl">
+
+            </div>
+        </div>
+        <div class="flex bg-white w-[1250px] content">
+            <div class="kiri w-[850px] px-[50px] py-8">
+                <div class="flex gap-4 mb-2">
+                    <div>
+                        <div class="P-6 font-bold text-xl text-[#F46523]">
+                            FLIGHT 1245
+                        </div>
+                        <div class="P-6">
+                            From <span class="font-bold">Tasikmalaya</span> to <span class="font-bold">Bandung</span>
+                        </div>
+                    </div>
+                    <div class="w-[40%] ml-32">
+                        <img src="./src/img/barcode 1.png" class="" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="P-6 font-bold text-xl text-[#F46523]">
+                    TERMINAL 1
+                </div>
+                <div class="P-6 mb-2">
+                    Gate <span class="font-bold">15</span>
+                </div>
+                <div class="flex gap-12">
+                    <div class="pr-12">
+                        <div class="P-6  font-bold text-xl text-[#F46523]">
+                            Passenger
+                        </div>
+                        <div class="P-6 font-bold">
+                            Lorem, ipsum.
+                        </div>
+                    </div>
+                    <div class="pr-12">
+                        <div class="P-6 font-bold text-xl text-[#F46523]">
+                            Date
+                        </div>
+                        <div class="P-6 font-bold">
+                            11 March 2024
+                        </div>
+                    </div>
+                    <div class="pr-12">
+                        <div class="P-6 font-bold text-xl text-[#F46523]">
+                            Boarding Time
+                        </div>
+                        <div class="P-6 font-bold">
+                            12.10
+                        </div>
+                    </div>
+                    <div class="pr-12">
+                        <div class="P-6 font-bold text-xl text-[#F46523]">
+                            Seat
+                        </div>
+                        <div class="P-6 font-bold">
+                            8A
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kanan w-[400px] px-1 py-4">
+                <div class="flex">
+                    <div class="py-20 w-[200px]">
+                        <img src="./src/img/barcode 1.png" class="rotate-90" alt="" srcset="">
+                    </div>
+                    <div class="pl-2">
+                        <div>
+                            <div>
+                                <div class="P-6 font-bold text-xl text-[#F46523]">
+                                    FLIGHT 1245
+                                </div>
+                                <div class="P-6 mb-2">
+                                    From <span class="font-bold">Tasikmalaya</span> to <span
+                                        class="font-bold">Bandung</span>
+                                </div>
+                            </div>
+                            <div class="P-6 font-bold text-xl text-[#F46523]">
+                                TERMINAL 1
+                            </div>
+                            <div class="P-6 mb-2">
+                                Gate <span class="font-bold">15</span>
+                            </div>
+                            <div class="P-6  font-bold text-xl text-[#F46523]">
+                                Passenger
+                            </div>
+                            <div class="P-6 font-bold">
+                                Lorem, ipsum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="bg-[#F46523] w-[850px] p-6 rounded-b-3xl">
+
+            </div>
+            <div class="bg-[#F46523] w-[400px] p-6 rounded-b-3xl">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
